@@ -1,0 +1,95 @@
+.btn{
+  --bg-color : white;
+  --color : black;
+  --exp : blue;
+  --income: pink;
+  
+}
+.btn .dark{
+
+  background-color: var(--bg-color);
+  color: var(--color);
+}
+
+
+body{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  width:100vw;
+}
+
+.container{
+  display: flex;
+  align-content: center;
+  justify-content:space-between;
+   
+}
+.minus {
+  border: 3px solid red;
+  padding: 40px;
+   height: fit-content0;
+   width: fit-content;
+}
+.plus{
+  border: 3px solid green;
+  padding: 40px;
+   height: fit-content0;
+   width: fit-content;
+}
+
+
+.cost{
+  margin: 0;
+}
+.list{
+  list-style-type: none;
+  list-style-position: initial;
+  /* border: 1px solid black; */
+  
+}
+.minusli{
+ 
+  display: flex;
+  align-content: center;
+  justify-content:space-between;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  width: calc(100/3)vh;
+
+}
+.delete{
+/* visibility: hidden; */
+border: 1px solid red;
+pointer-events:visiblePainted ;
+}
+.plus-amt{
+  border: 1px solid green;
+  padding: 0  10px 0 10px;
+}
+.minus-amt{
+  border: 1px solid red;
+  padding: 0  10px 0 10px;
+}
+.container_1{
+  display: grid;
+  grid-column: span;
+}
+.container_1 button{
+ 
+  margin-top: 10px;
+  background-color: rgb(165, 108, 218);
+  color: white;
+  border: 1px solid gray;
+}
+.minusli:hover .delete{
+  border: 1px solid black;
+  /* visibility: visible; */
+  
+  
+}
+.container_1 input:active{
+border: 1px solid gray;
+}
+
